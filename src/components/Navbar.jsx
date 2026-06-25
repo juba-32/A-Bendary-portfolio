@@ -5,7 +5,6 @@ import { clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
 import { Download } from "lucide-react";
 import { motion } from "framer-motion";
-import CV from "../../dist/assets/images/A.Bendary-Front-End Developer.pdf";
 function cn(...inputs) {
   return twMerge(clsx(inputs));
 }
@@ -127,7 +126,7 @@ const Navbar = () => {
             </a>
           ))}
           <a
-              href={CV}
+              href="/A.Bendary-Front-End-Developer.pdf"
               className="bg-primary hover:bg-primary-dark text-white px-6 flex justify-center py-2 gap-3 rounded-full font-medium transition-colors"
             >
               Resume
