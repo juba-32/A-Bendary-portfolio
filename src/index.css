@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@theme {
+    --color-primary: #135bec;
+    --color-primary-dark: #0e46b3;
+    --font-inter: "Inter", sans-serif;
+}
+
+:root {
+    font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    color-scheme: light dark;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-width: 320px;
+    min-height: 100vh;
+    @apply bg-white text-gray-900 transition-colors duration-300;
+}
+
+.dark body {
+    @apply bg-gray-950 text-gray-100;
+}
+
+@layer utilities {
+    .animate-spin-slow {
+        animation: spin 8s linear infinite;
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+::-webkit-scrollbar {
+  width: 8px; /* scrollbar width */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* track color */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: theme('colors.primary'); /* Tailwind primary color */
+  border-radius: 9999px; /* rounded scrollbar */
+  border: 2px solid transparent; /* optional for spacing */
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: theme('colors.primary-dark'); /* optional hover color */
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: theme('colors.primary') transparent;
+}
+
