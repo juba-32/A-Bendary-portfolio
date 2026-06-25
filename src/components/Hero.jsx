@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import bendaryImage from "../../dist/assets/images/bendary.avif";
+import bendaryImage from "../assets/images/bendary.avif";
 
 import {
   SiReact,

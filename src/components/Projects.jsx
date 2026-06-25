@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import { ExternalLink, Github } from "lucide-react";
-import project1 from "../../dist/assets/images/nelly.webp";
-import project2 from "../../dist/assets/images/walmart.webp";
-import project3 from "../../dist/assets/images/sarah-portfolio.webp";
-import project4 from "../../dist/assets/images/youtupe-clone.webp";
+import project1 from "../assets/images/nelly.webp";
+import project2 from "../assets/images/walmart.webp";
+import project3 from "../assets/images/sarah-portfolio.webp";
+import project4 from "../assets/images/youtupe-clone.webp";
 
 const Projects = () => {
   const projects = [

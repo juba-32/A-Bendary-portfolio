@@ -81,7 +81,7 @@ const Navbar = () => {
               {theme === "dark" ? <Sun className="text-yellow-500" size={20} /> : <Moon size={20} />}
             </button>
             <a
-              href={CV}
+              href="/A.Bendary-Front-End Developer.pdf"
               className="bg-primary hover:bg-primary-dark text-white px-6 flex py-2 gap-3 rounded-full font-medium transition-colors"
             >
               Resume
@@ -126,7 +126,7 @@ const Navbar = () => {
             </a>
           ))}
           <a
-              href="/A.Bendary-Front-End-Developer.pdf"
+              href="/A.Bendary-Front-End Developer.pdf"
               className="bg-primary hover:bg-primary-dark text-white px-6 flex justify-center py-2 gap-3 rounded-full font-medium transition-colors"
             >
               Resume
