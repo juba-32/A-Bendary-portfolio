@@ -43,7 +43,7 @@ const About = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.8 }}
                     >
-                        <h2 className="text-3xl font-extrabold mb-10 dark:text-white">Technical Expertise</h2>
+                        <h2 className="text-3xl font-extrabold mb-10">Technical Expertise</h2>
                         <div className="space-y-6">
                             {[
                                 { name: 'HTML5 / CSS3', level: '95%' },
@@ -56,7 +56,7 @@ const About = () => {
                             ].map((skill, index) => (
                                 <div key={index}>
                                     <div className="flex justify-between mb-2">
-                                        <span className="font-semibold dark:text-gray-200">{skill.name}</span>
+                                        <span className="font-semibold ">{skill.name}</span>
                                         <span className="text-primary">{skill.level}</span>
                                     </div>
                                     <div className="h-2 w-full bg-gray-200 dark:bg-gray-800 rounded-full overflow-hidden">

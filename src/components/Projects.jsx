@@ -1,63 +1,164 @@
 import { motion } from "framer-motion";
 import { ExternalLink, Github } from "lucide-react";
 import project1 from "../assets/images/nelly.webp";
-import project2 from "../assets/images/walmart.webp";
+import project5 from "../assets/images/Nelly-dashboard.webp";
 import project3 from "../assets/images/sarah-portfolio.webp";
 import project4 from "../assets/images/youtupe-clone.webp";
+import project2 from "../assets/images/walmart.webp";
 
 const Projects = () => {
   const projects = [
     {
-      title: "Full Stack E-commerce App",
+      title: "Full Stack E-commerce",
       description:
-        "A high-performance e-commerce platform with real-time inventory, secure checkout, and a sleek user dashboard.",
-      tags: ["React", "Node.js", "MongoDB", "Redux", "18n", "JWT", "MUI"],
+        "A full-stack e-commerce platform built with React, Node.js, Express, and MongoDB. It provides a modern shopping experience with authentication, advanced filtering, multilingual support, dark mode, and responsive design.",
+
+      technologies: [
+        "React",
+        "Redux Toolkit",
+        "Material UI",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "JWT",
+        "Axios",
+        "i18next",
+      ],
+
+      features: [
+        "JWT Authentication",
+        "Shopping Cart",
+        "Wishlist",
+        "Product Search",
+        "Advanced Filtering",
+        "Dark / Light Mode",
+        "Multi-language",
+        "Responsive Design",
+        "REST API",
+        "Performance Optimized",
+      ],
+
       image: project1,
       github: "https://github.com/juba-32/store",
       demo: "https://nelly-mu.vercel.app/",
     },
+{
+      title: "Admin Dashboard",
+      description:
+        "A complete admin dashboard for managing an e-commerce platform with analytics, authentication, products, customers, orders, offers, and responsive layouts.",
+
+      technologies: [
+        "React",
+        "Redux Toolkit",
+        "Material UI",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "JWT",
+        "Chart.js",
+        "Axios",
+        "i18next",
+      ],
+
+      features: [
+        "Dashboard Analytics",
+        "Products Management",
+        "Customers Management",
+        "Orders Management",
+        "Offers Management",
+        "JWT Authentication",
+        "Charts & Statistics",
+        "Dark / Light Mode",
+        "Multi-language",
+        "Responsive Design",
+      ],
+
+      image: project5,
+      github: "https://github.com/juba-32/nelly-admin-dashboard",
+      demo: "https://nelly-admin-dashboard.vercel.app/",
+    },
+
     {
       title: "Mobile E-commerce",
       description:
-        "AI-powered tool for generating marketing copy, social media posts, and blog outlines with ease.",
-      tags: ["React.js", "Redux Toolkit", "TypeScript", "Axios"],
+        "A responsive mobile-first e-commerce application with reusable components, global state management, API integration, and optimized performance across all devices.",
+
+      technologies: [
+        "React",
+        "TypeScript",
+        "Redux Toolkit",
+        "Material UI",
+        "Axios",
+      ],
+
+      features: [
+        "Responsive Design",
+        "Reusable Components",
+        "Redux State Management",
+        "REST API",
+        "Product Categories",
+        "Shopping Cart",
+        "Optimized Performance",
+      ],
+
       image: project2,
       github: "https://github.com/juba-32/mobile-ecommerce/tree/main",
       demo: "https://commerceo-frontend.vercel.app/",
     },
+
     {
       title: "Sarah Portfolio",
       description:
-        "A professional portfolio for a Social Media Manager showcasing services, achievements, and client-focused solutions with modern UI/UX and responsive design.",
-      tags: [
-        "Next.js",
-        "TypeScript",
+        "A modern portfolio website for a Social Media Manager featuring elegant animations, multilingual support, dark mode, responsive layouts, EmailJS contact form, and WhatsApp integration.",
+
+      technologies: [
+        "React",
         "Tailwind CSS",
         "Framer Motion",
-        "next-intl",
+        "EmailJS",
+        "React Icons",
+        "i18next",
       ],
+
+      features: [
+        "Responsive Design",
+        "Dark / Light Mode",
+        "Smooth Animations",
+        "EmailJS Contact Form",
+        "WhatsApp Integration",
+        "Multi-language",
+        "Modern UI/UX",
+      ],
+
       image: project3,
       github: "https://github.com/juba-32/sarah-portfolio",
       demo: "https://sara-portfolio-32.vercel.app/",
     },
+
+    
+
+    
     {
-      title: "Youtube Clone",
+      title: "YouTube Clone",
       description:
-        "Clean web interface for downloading high-quality videos from various social media platforms.",
-      tags: ["React", "React Router", "MUI", "Axios"],
+        "A YouTube-inspired web application that allows users to browse trending videos, search content, explore channels, and watch videos through API integration.",
+
+      technologies: ["React", "Material UI", "React Router", "Axios"],
+
+      features: [
+        "Video Search",
+        "Trending Videos",
+        "Channel Pages",
+        "Video Details",
+        "API Integration",
+        "Responsive Design",
+        "Lazy Loading",
+      ],
+
       image: project4,
       github: "https://github.com/juba-32/youtube-clone",
       demo: "https://youtube-clone-liard-eight.vercel.app/",
     },
-    // {
-    //   title: "Admin Dashboard",
-    //   description:
-    //     "A high-conversion landing page for a boutique law firm featuring smooth scroll animations.",
-    //   tags: ["React.js", "Node.js", "MongoDB", "MUI", "JWT"],
-    //   image: project5,
-    //   github: "https://github.com/juba-32/nelly-admin-dashboard",
-    //   demo: "https://nelly-admin-dashboard.vercel.app/",
-    // },
   ];
 
   return (
@@ -71,7 +172,7 @@ const Projects = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+        <div className="flex flex-col gap-12">
           {projects.map((project, index) => (
             <motion.div
               key={index}
@@ -79,48 +180,81 @@ const Projects = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="group rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition-all h-full flex flex-col"
+              className="group overflow-hidden rounded-3xl  shadow-lg hover:shadow-2xl transition-all duration-500"
             >
-              <div className="h-auto  flex items-center justify-center relative overflow-hidden">
-                <div className="absolute inset-0 "></div>
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-content group-hover:scale-110 transition-transform duration-500"
-                />
-              </div>
-              <div className="p-8 flex-grow flex flex-col">
-                <div className="flex gap-2 mb-4 flex-wrap">
-                  {project.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="text-xs font-semibold px-3 py-1 bg-primary/10 text-primary rounded-full"
-                    >
-                      {tag}
-                    </span>
-                  ))}
+              <div className="grid lg:grid-cols-2">
+                {/* Image */}
+                <div className="overflow-hidden ">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-700"
+                  />
                 </div>
-                <h3 className="text-2xl font-bold mb-3 group-hover:text-primary transition-colors dark:text-white">
-                  {project.title}
-                </h3>
-                <p className="text-gray-600 dark:text-gray-400 mb-6 flex-grow leading-relaxed">
-                  {project.description}
-                </p>
-                <div className="flex gap-4 pt-4 border-t border-gray-100 dark:border-gray-800 mt-auto">
-                  <a
-                    href={project.github}
-                    className="flex items-center gap-2 text-sm font-bold text-gray-500 hover:text-primary transition-colors"
-                  >
-                    <Github size={18} />
-                    Code
-                  </a>
-                  <a
-                    href={project.demo}
-                    className="flex items-center gap-2 text-sm font-bold text-gray-500 hover:text-primary transition-colors"
-                  >
-                    <ExternalLink size={18} />
-                    Live Demo
-                  </a>
+
+                {/* Content */}
+                <div className="p-8 flex flex-col">
+                  <h3 className="text-3xl font-bold mb-4">{project.title}</h3>
+
+                  <p className="text-gray-600 dark:text-gray-400 leading-8 mb-8">
+                    {project.description}
+                  </p>
+
+                  {/* Technologies */}
+                  <div className="mb-8">
+                    <h4 className="font-semibold text-lg mb-3">Technologies</h4>
+
+                    <div className="flex flex-wrap gap-2">
+                      {project.technologies.map((tag) => (
+                        <span
+                          key={tag}
+                          className="px-4 py-2 rounded-full text-sm font-medium bg-primary/10 text-primary border border-primary/20"
+                        >
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Features */}
+                  <div className="mb-8">
+                    <h4 className="font-semibold text-lg mb-3">Key Features</h4>
+
+                    <div className="grid grid-cols-2 gap-3 text-sm">
+                      {project.features.map((feature) => (
+                        <div
+                          key={feature}
+                          className="flex items-center gap-2 "
+                        >
+                          <span className="text-green-500">✓</span>
+                          <span>{feature}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Buttons */}
+                  <div className="flex gap-4 mt-auto">
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-center gap-2 px-6 py-3 rounded-xl border border-gray-300 dark:border-gray-700 hover:border-primary hover:text-primary transition-all"
+                    >
+                      <Github size={18} />
+                      GitHub
+                    </a>
+
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-primary text-white hover:opacity-90 transition-all"
+                    >
+                      <ExternalLink size={18} />
+                      Live Demo
+                    </a>
+                  </div>
                 </div>
               </div>
             </motion.div>

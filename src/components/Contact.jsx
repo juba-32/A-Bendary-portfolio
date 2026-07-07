@@ -85,7 +85,7 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <p className="text-sm text-gray-500">Email Me</p>
+                  <p className="text-sm text-gray-500 dark:text-gray-400">Email Me</p>
                   <p className="text-xl font-bold group-hover:text-primary transition-colors">
                     bendarya58@gmail.com
                   </p>
@@ -104,7 +104,7 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <p className="text-sm text-gray-500">WhatsApp</p>
+                  <p className="text-sm text-gray-500 dark:text-gray-400">WhatsApp</p>
                   <p className="text-xl font-bold group-hover:text-green-500 transition-colors">
                     +20 106 039 4855
                   </p>
@@ -151,7 +151,7 @@ const Contact = () => {
                     })
                   }
                   placeholder="Your name"
-                  className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-700 focus:ring-2 focus:ring-primary outline-none"
+                  className="text-gray-600 dark:text-gray-600 w-full px-4 py-3 rounded-xl border border-gray-600 dark:border-gray-700 focus:ring-2 focus:ring-primary outline-none"
                 />
               </div>
 
@@ -171,7 +171,7 @@ const Contact = () => {
                     })
                   }
                   placeholder="Your email"
-                  className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-700 focus:ring-2 focus:ring-primary outline-none"
+                  className="text-gray-600 dark:text-gray-600 w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-700 focus:ring-2 focus:ring-primary outline-none"
                 />
               </div>
             </div>
@@ -192,7 +192,7 @@ const Contact = () => {
                   })
                 }
                 placeholder="How can I help you?"
-                className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-700 focus:ring-2 focus:ring-primary outline-none resize-none"
+                className="text-gray-600 dark:text-gray-600 w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-700 focus:ring-2 focus:ring-primary outline-none resize-none"
               />
             </div>
 

@@ -45,7 +45,7 @@ const Navbar = () => {
           <div className="flex-shrink-0">
             <a
               href="#home"
-              className="flex items-center gap-5 text-2xl font-bold "
+              className="flex items-center gap-3 text-xl lg:text-2xl font-bold "
             >
               <motion.div
               className="text-primary"
@@ -63,12 +63,12 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Links */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center gap-4 lg:gap-8">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
-                className="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary font-medium transition-colors"
+                className="text-sm lg:text-base text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary font-medium transition-colors"
               >
                 {link.name}
               </a>
@@ -82,7 +82,7 @@ const Navbar = () => {
             </button>
             <a
               href="/A.Bendary-Front-End Developer.pdf"
-              className="bg-primary hover:bg-primary-dark text-white px-6 flex py-2 gap-3 rounded-full font-medium transition-colors"
+              className="bg-primary hover:bg-primary-dark text-white px-4 lg:px-6 flex py-2 gap-2 flex items-center text-sm lg:text-base whitespace-nowrap rounded-full font-medium transition-colors"
             >
               Resume
               <Download />
