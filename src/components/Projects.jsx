@@ -5,6 +5,7 @@ import project5 from "../assets/images/Nelly-dashboard.webp";
 import project3 from "../assets/images/sarah-portfolio.webp";
 import project4 from "../assets/images/youtupe-clone.webp";
 import project2 from "../assets/images/walmart.webp";
+import project6 from "../assets/images/lawfirm.webp";
 
 const Projects = () => {
   const projects = [
@@ -136,7 +137,37 @@ const Projects = () => {
     },
 
     
+{
+      title: "Al-Adala Legal Services",
+      description:
+        "A professional and responsive web application built for a law firm specializing in criminal defense and legal representation in Dubai and Abu Dhabi.",
 
+      technologies: [
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Framer Motion",
+        "React Icons",
+        "@emailjs/browser",
+      ],
+
+      features: [
+        "Confidential Consultation Form",
+        "EmailJS Form Integration",
+        "Direct WhatsApp Chat Integration",
+        "Strictly Confidential Handling",
+        "Responsive Mobile-First Design",
+        "Professional Attorney Profiles",
+        "Interactive Legal Services Grid",
+        "FAQ & Assurance Sections",
+        "SEO Optimized",
+        "High Performance Architecture",
+      ],
+
+      image: project6,
+      github: "https://github.com/juba-32/law-firm-main",
+      demo: "https://law-firm-main.vercel.app/",
+  },
     
     {
       title: "YouTube Clone",
